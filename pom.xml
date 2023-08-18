@@ -19,17 +19,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>killbill-oss-parent</artifactId>
         <groupId>org.kill-bill.billing</groupId>
-        <version>0.143.45</version>
+        <artifactId>killbill-oss-parent</artifactId>
+        <version>0.146.1</version>
     </parent>
     <groupId>org.kill-bill.billing.plugin</groupId>
     <artifactId>killbill-plugin-api</artifactId>
-    <version>0.26.5-SNAPSHOT</version>
+    <version>0.27.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Kill Bill plugin apis</name>
     <description>Kill Bill plugin apis</description>
     <url>http://github.com/killbill/killbill-plugin-api</url>
+
     <modules>
         <module>notification</module>
         <module>payment</module>
@@ -43,10 +44,14 @@
     <scm>
         <connection>scm:git:git://github.com/killbill/killbill-plugin-api.git</connection>
         <developerConnection>scm:git:git@github.com:killbill/killbill-plugin-api.git</developerConnection>
+        <tag>HEAD</tag>
         <url>http://github.com/killbill/killbill-plugin-api/tree/master</url>
     </scm>
     <issueManagement>
         <system>Github</system>
         <url>https://github.com/killbill/killbill-plugin-api/issues</url>
     </issueManagement>
+    <properties>
+        <check.fail-spotbugs>true</check.fail-spotbugs>
+    </properties>
 </project>
